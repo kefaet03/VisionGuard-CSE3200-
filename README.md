@@ -2,7 +2,7 @@
 
 Real-time video intelligence for monitoring live camera feeds, detecting suspicious activity, and delivering alerts to a web dashboard and Telegram.
 
-- Demo video: [demo_video.mp4](demo_video.mp4)
+- Demo video: [demo_video.mp4](output01.mp4)
 
 ## Table of contents
 
@@ -151,4 +151,5 @@ Telegram notifications are sent for alert notifications when a shop has a config
 ## License
 
 No license file is included in this repository.
+
 
