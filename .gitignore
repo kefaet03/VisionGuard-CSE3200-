@@ -54,6 +54,7 @@ backend-visionguard-ai/models/yolov8n-pose.pt
 backend-visionguard-ai/models/yolov8n.pt
 backend-visionguard-ai/videos/sample07.mp4
 backend-visionguard-ai/docs/frontendauth.md
+./demo_video.mp4
 
 # Next.js env
 visionguardai-frontend/.env.local
