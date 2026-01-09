@@ -1,0 +1,80 @@
+# ==============================
+# OS / Editor
+# ==============================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.Zone.Identifier
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+backend-visionguard-ai/venv/
+
+# Env / secrets
+.env
+.env.*
+*.env
+
+# Logs
+logs/
+*.log
+backend-visionguard-ai/logs/
+
+# ==============================
+# Node / Next.js
+# ==============================
+node_modules/
+.pnpm-store/
+.next/
+out/
+dist/
+build/
+.turbo/
+.vercel/
+
+# Next.js env
+visionguardai-frontend/.env.local
+visionguardai-frontend/.env.*
+
+# ==============================
+# Generated media / outputs
+# ==============================
+# Saved anomaly frames (generated at runtime)
+backend-visionguard-ai/anomaly_frames/
+
+# Model/experiment outputs (if generated locally)
+backend-visionguard-ai/results/
+backend-visionguard-ai/runs/
+
+# Local videos (if you don't want to version them)
+# Uncomment if videos are generated locally
+# backend-visionguard-ai/videos/
+
+# ==============================
+# Jupyter
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Misc
+# ==============================
+*.tmp
+*.temp

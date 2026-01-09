@@ -1,0 +1,77 @@
+test_determine_severity_mapping (tesing.test_backend_smoke.TestAnomalyService.test_determine_severity_mapping) ... ERROR
+test_save_frame_writes_file (tesing.test_backend_smoke.TestAnomalyService.test_save_frame_writes_file) ... ERROR
+test_expired_token_is_rejected (tesing.test_backend_smoke.TestAuthUtilities.test_expired_token_is_rejected) ... ERROR
+test_jwt_roundtrip (tesing.test_backend_smoke.TestAuthUtilities.test_jwt_roundtrip) ... ERROR
+test_password_hash_and_verify (tesing.test_backend_smoke.TestAuthUtilities.test_password_hash_and_verify) ... ERROR
+test_resolve_device_cuda_fallback (tesing.test_backend_smoke.TestConfigUtilities.test_resolve_device_cuda_fallback) ... ERROR
+
+======================================================================
+ERROR: test_determine_severity_mapping (tesing.test_backend_smoke.TestAnomalyService.test_determine_severity_mapping)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kefaet03/visionguard-main/tesing/test_backend_smoke.py", line 67, in test_determine_severity_mapping
+    from app.services.anomaly_service import AnomalyService
+  File "/home/kefaet03/visionguard-main/backend-visionguard-ai/app/services/__init__.py", line 5, in <module>
+    from app.services.anomaly_service import AnomalyService
+  File "/home/kefaet03/visionguard-main/backend-visionguard-ai/app/services/anomaly_service.py", line 8, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+======================================================================
+ERROR: test_save_frame_writes_file (tesing.test_backend_smoke.TestAnomalyService.test_save_frame_writes_file)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kefaet03/visionguard-main/tesing/test_backend_smoke.py", line 77, in test_save_frame_writes_file
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+======================================================================
+ERROR: test_expired_token_is_rejected (tesing.test_backend_smoke.TestAuthUtilities.test_expired_token_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kefaet03/visionguard-main/tesing/test_backend_smoke.py", line 47, in test_expired_token_is_rejected
+    from app.core import auth as auth_mod
+  File "/home/kefaet03/visionguard-main/backend-visionguard-ai/app/core/__init__.py", line 5, in <module>
+    from app.core.auth import (
+  File "/home/kefaet03/visionguard-main/backend-visionguard-ai/app/core/auth.py", line 9, in <module>
+    from passlib.context import CryptContext
+ModuleNotFoundError: No module named 'passlib'
+
+======================================================================
+ERROR: test_jwt_roundtrip (tesing.test_backend_smoke.TestAuthUtilities.test_jwt_roundtrip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kefaet03/visionguard-main/tesing/test_backend_smoke.py", line 33, in test_jwt_roundtrip
+    from app.core import auth as auth_mod
+  File "/home/kefaet03/visionguard-main/backend-visionguard-ai/app/core/__init__.py", line 5, in <module>
+    from app.core.auth import (
+  File "/home/kefaet03/visionguard-main/backend-visionguard-ai/app/core/auth.py", line 9, in <module>
+    from passlib.context import CryptContext
+ModuleNotFoundError: No module named 'passlib'
+
+======================================================================
+ERROR: test_password_hash_and_verify (tesing.test_backend_smoke.TestAuthUtilities.test_password_hash_and_verify)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kefaet03/visionguard-main/tesing/test_backend_smoke.py", line 20, in test_password_hash_and_verify
+    from app.core.auth import hash_password, verify_password
+  File "/home/kefaet03/visionguard-main/backend-visionguard-ai/app/core/__init__.py", line 5, in <module>
+    from app.core.auth import (
+  File "/home/kefaet03/visionguard-main/backend-visionguard-ai/app/core/auth.py", line 9, in <module>
+    from passlib.context import CryptContext
+ModuleNotFoundError: No module named 'passlib'
+
+======================================================================
+ERROR: test_resolve_device_cuda_fallback (tesing.test_backend_smoke.TestConfigUtilities.test_resolve_device_cuda_fallback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kefaet03/visionguard-main/tesing/test_backend_smoke.py", line 58, in test_resolve_device_cuda_fallback
+    from app import config as cfg
+  File "/home/kefaet03/visionguard-main/backend-visionguard-ai/app/config.py", line 80, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+FAILED (errors=6)

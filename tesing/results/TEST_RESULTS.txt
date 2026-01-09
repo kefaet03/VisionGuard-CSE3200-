@@ -1,0 +1,10 @@
+VisionGuard.ai — Test Results
+
+- Runner: unittest
+- Command: python -m unittest -v tesing.test_backend_smoke
+- Total: 6
+- Failures: 0
+- Errors: 5
+- Skipped: 0
+
+Output: tesing/results/unittest_output.txt
